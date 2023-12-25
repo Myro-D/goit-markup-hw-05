@@ -3,6 +3,7 @@
   --iris-color: #4d5ae5;
   --svg-icons: #f4f4fd;
   --navy-blue-modal: #4d5ae5;
+  --modal-label: #8e8f99;
 }
 h1,
 h2,
@@ -651,6 +652,7 @@ input::placeholder {
   background: #fcfcfc;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .modal-btn {
   position: absolute;
@@ -659,18 +661,13 @@ input::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
-
-  /* top: 24px;
+  top: 24px;
   right: 24px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  height: 24px;
-  color: #2e2f42;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-btn:hover,
@@ -679,6 +676,7 @@ input::placeholder {
   border: none;
   fill: #ffffff;
 }
+
 .svg-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -696,7 +694,7 @@ input::placeholder {
 .modal-form {
 }
 .field {
-  margin-bottom: 26px;
+  margin-bottom: 8px;
   position: relative;
 }
 .input-modal {
@@ -711,6 +709,9 @@ input::placeholder {
   border-radius: 4px;
   border: 1px solid var(--iris-color, #4d5ae5);
 }
+.modal-input-svg {
+  position: relative;
+}
 .form-icon {
   position: absolute;
   top: 11px;
@@ -723,12 +724,11 @@ input::placeholder {
 }
 .label-modal {
   display: block;
-  margin-bottom: 8px;
-  color: #8e8f99;
+  margin-bottom: 4px;
+  color: var(--modal-label);
   font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .area-modal {
   width: 100%;
