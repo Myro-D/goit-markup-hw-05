@@ -580,10 +580,13 @@ input::placeholder {
   color: #ffffff;
 }
 .button-sub {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
@@ -594,6 +597,11 @@ input::placeholder {
   border-radius: 4px;
   background: #4d5ae5;
   outline: none;
+  cursor: pointer;
+  border: none;
+}
+.svg-foot-btn-icon {
+  margin-left: 16px;
 }
 .backdrop {
   position: fixed;
