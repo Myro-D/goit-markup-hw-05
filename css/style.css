@@ -549,7 +549,11 @@ footer a {
 }
 
 .form-foter-sub {
+  display: flex;
   margin-left: 80px;
+}
+.foot-form-label {
+  gap: 24px;
 }
 .input-sub {
   border: 1px solid #ffffff;
