@@ -746,7 +746,7 @@ input::placeholder {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 8px 16px;
+  padding: 8px 16px;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -786,40 +786,43 @@ input::placeholder {
   letter-spacing: 0.04em;
   text-decoration-line: underline;
 }
-.field-two {
-  margin-bottom: 16px;
-}
+
 .checkbox:active {
   fill: #404bbf;
 }
 .span-checkbox {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 16px;
-  border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   fill: transparent;
-  cursor: pointer;
 }
+
 input:checked + .checkbox-cont span {
   background-color: var(--bg-color);
   border: none;
   fill: var(--svg-icons);
 }
+/* .checkbox:checked + .checkbox-cont .span-checkbox .svg-checkbox use {
+  fill: #f4f4fd;
+} */
 /* .svg-checkbox {
-  opacity: 0;
-}
-
-.checkbox:checked + .span-checkbox > .svg-checkbox {
-  background-color: #404bbf;
-  border-color: #404bbf;
   opacity: 1;
 } */
+
+/* .checkbox:checked + .checkbox-cont .span-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+  stroke: #ffffff;
+} */
+
 .container-submit {
   display: flex;
   align-items: center;
@@ -827,6 +830,7 @@ input:checked + .checkbox-cont span {
 }
 .submit-btn {
   display: block;
+  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   font-size: 16px;
