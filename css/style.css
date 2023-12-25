@@ -531,7 +531,11 @@ footer a {
 .a-footer-social:focus {
   background-color: #31d0aa;
 }
-.p-social-footer {
+.foter-social-container {
+  margin-right: 80px;
+}
+.p-social-footer,
+.p-sub-footer {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -541,6 +545,7 @@ footer a {
   text-align: left;
   margin-bottom: 16px;
 }
+
 .foter-logo-p-container {
   margin-right: 120px;
 }
@@ -550,10 +555,10 @@ footer a {
 
 .form-foter-sub {
   display: flex;
-  margin-left: 80px;
+
+  gap: 24px;
 }
 .foot-form-label {
-  gap: 24px;
 }
 .input-sub {
   border: 1px solid #ffffff;
@@ -563,6 +568,7 @@ footer a {
   height: 40px;
   width: 264px;
   font-size: 12px;
+  padding-left: 16px;
   line-height: 2;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
