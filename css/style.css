@@ -782,14 +782,14 @@ input::placeholder {
 .svg-checkbox {
   opacity: 0;
 }
-input:checked + .checkbox-cont span {
+input:checked + .checkbox-cont .span-checkbox {
   background-color: var(--bg-color);
   border: none;
   fill: var(--svg-icons);
 }
-.checkbox:checked + .checkbox-cont .span-checkbox {
+/* .checkbox:checked + .checkbox-cont .span-checkbox {
   fill: #404bbf;
-}
+} */
 .checkbox:checked + .checkbox-cont .span-checkbox .svg-checkbox {
   opacity: 1;
 }
