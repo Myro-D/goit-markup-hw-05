@@ -788,9 +788,6 @@ input:checked + .checkbox-cont .span-checkbox {
   fill: var(--svg-icons);
 }
 
-/* .checkbox:checked + .checkbox-cont .span-checkbox {
-  fill: #404bbf;
-} */
 .checkbox:checked + .checkbox-cont .span-checkbox .svg-checkbox {
   opacity: 1;
 }
