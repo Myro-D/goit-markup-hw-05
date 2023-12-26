@@ -673,8 +673,11 @@ input::placeholder {
 .modal-form {
 }
 .field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   position: relative;
+}
+.field-dif {
+  margin-bottom: 16px;
 }
 .input-modal {
   width: 100%;
