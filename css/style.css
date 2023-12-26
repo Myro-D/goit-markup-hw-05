@@ -755,8 +755,6 @@ input::placeholder {
 .privacy-policy {
   color: #4d5ae5;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
@@ -787,6 +785,7 @@ input:checked + .checkbox-cont .span-checkbox {
   border: none;
   fill: var(--svg-icons);
 }
+
 /* .checkbox:checked + .checkbox-cont .span-checkbox {
   fill: #404bbf;
 } */
