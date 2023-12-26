@@ -650,8 +650,9 @@ input::placeholder {
   border: none;
   fill: #ffffff;
 }
-.modal-btn:active + .svg-btn-icon > .close-close {
-  opacity: 0;
+.modal-btn:hover .svg-btn-icon .close-close,
+.modal-btn:focus .svg-btn-icon .close-close {
+  opacity: 1;
 }
 .modal-btn:active .svg-btn-icon .close-close {
   opacity: 1;
