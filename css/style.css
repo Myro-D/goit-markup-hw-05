@@ -831,3 +831,50 @@ input:checked + .checkbox-cont .span-checkbox {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #edf2f7;
+}
+
+.card-set {
+  max-width: 960px;
+  min-width: 320px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.item {
+  padding: 4px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #212121;
+}
+@media (min-width: 600px) {
+  .card-set {
+    gap: 8px;
+  }
+
+  .item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+@media (min-width: 900px) {
+  .card-set {
+    gap: 12px;
+  }
+
+  .item {
+    flex-basis: calc((100% - 36px) / 3);
+  }
+}
